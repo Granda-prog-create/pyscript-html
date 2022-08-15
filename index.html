@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-env>
+           - numpy 
+           - matplotlib
+
+        </py-env>
+
+        
+        <body>
+            <py-script>
+def somar(a,b):
+        return (a+b) 
+        
+        
+            </py-script>
+            <h1>Minha página com Python</h1>
+            <py-script> 
+                print('Hello 1 + 2 = ' + str(somar(1,2))  ) 
+            </py-script>
+            <div id="Gráfico"></div>
+            <py-script output="Gráfico"> 
+import matplotlib.pyplot as plt 
+x,y = 300,400
+fig,ax = plt.subplots()
+ax.scatter(x,y)
+fig
+
+
+            </py-script>    
+
+        </body>
+
+    </head>
+</html> 
+
